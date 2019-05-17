@@ -1,0 +1,35 @@
+{
+  "name": "js-jest",
+  "version": "1.0.0",
+  "description": "Test with Jest",
+  "main": "index.js",
+  "scripts": {
+    "test-jest": "./node_modules/.bin/jest --updateSnapshot",
+    "test": "jest"
+  },
+  "keywords": [
+    "jest",
+    "tests",
+    "unity"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjrb3/js-jest.git"
+  },
+  "author": "Jeremy Reyes B. <jjrb6@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjrb3/js-jest/issues"
+  },
+  "homepage": "https://github.com/jjrb3/js-jest#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-jest": "^24.8.0",
+    "babel-polyfill": "^6.26.0",
+    "jest": "^24.8.0"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
