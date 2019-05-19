@@ -2,9 +2,10 @@
 import { getDataFromApi } from "../promise";
 
 describe('Promise test', () => {
-    test('Making a request to an api', done => {
 
-        const api = 'https://rickandmortyapi.com/api/character/';
+    const api = 'https://rickandmortyapi.com/api/character/';
+
+    test('Making a request to an api', done => {
 
         getDataFromApi(api).then(data => {
 
@@ -15,5 +16,14 @@ describe('Promise test', () => {
 
             done();
         });
+    });
+
+
+    test('Resolve hello', () => {
+        return expect(Promise.resolve('Hello!')).resolves.toBe('Hello!');
+    });
+
+    test('Reject with an error', () => {
+        return expect(Promise.reject('Error')).rejects.toBe('Error');
     });
 });
